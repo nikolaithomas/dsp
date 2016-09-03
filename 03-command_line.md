@@ -36,7 +36,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls -R seems really useful to trace through file paths, ls -1 makes it easier to track through the content listing visually, ls -m is also useful for getting a quick list of files w/commas, ls -u interesting as opposed to modified time, and ls -r quick way to reverse.
 
 ---
 
