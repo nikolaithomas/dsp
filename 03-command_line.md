@@ -16,17 +16,21 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
+`ls` 
+`ls -a` 
+`ls -l` 
+`ls -lh` 
+`ls -lah`
+`ls -t` 
+`ls -Glp` 
+
 `ls`  lists the contents of the current directory
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
-
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
----
+`ls -a`  lists all entries even those with a .
+`ls -l`  uses a long listing format with information about the contents
+`ls -lh`  uses a long listing format and prints sizes in human readable format
+`ls -lah`  all of the above (l,a,h)
+`ls -t`  sorts the contents by modification time with the newest first
+`ls -Glp`  G inhibits display of group information, l uses a long listing format with information about the contents, p appends a '/' to the directories
 
 ###Q3.  More List Files in Unix  
 
