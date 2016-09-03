@@ -10,7 +10,7 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
 unzip- lists tests and extracts compressed files in a ZIP archive, 
-cp- copies a file, mv- lets you move files without the mouse, find- will let you search through your directories from the command line, rm- lets you remove a file from the directories, grep <str><files>- will find files which contain a certain word, who- will output who is logged on, hsitory-will list commands you've used recently, top-prints system usage and the top resource users, mail- sends and recieve email from command line
+cp- copies a file, mv- lets you move files without the mouse, find- will let you search through your directories from the command line, rm- lets you remove a file from the directories, grep <str><files>- will find files which contain a certain word, who- will output who is logged on, history-will list commands you've used recently, top-prints system usage and the top resource users, mail- sends and recieve email from command line
 
 ---
 
