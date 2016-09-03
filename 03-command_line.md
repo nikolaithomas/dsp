@@ -9,7 +9,7 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+unzip- lists tests and extracts compressed files in a ZIP archive, cp- copies a file, mv- lets you move files without the mouse, find- will let you search through your directories from the command line, 
 
 ---
 
@@ -44,7 +44,11 @@ ls -R seems really useful to trace through file paths, ls -1 makes it easier to 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs allows you to execute the same command from standard input over a series of things, in order
+
+find /tmp -name "*.tmp" | xargs rm
+
+This will find every file name that is temporary and delete it in the /tmp directory or any directories below
 
  
 
