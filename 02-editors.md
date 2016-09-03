@@ -68,6 +68,6 @@ vim-although there is a learning curve it is very customizable and portable. I p
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Vim- I made my decision because it's nice to have consistency across graphical and non-graphical environments and that way I don't have to learn two different editors. you never have to use the mouse. you can customize a bunch but right off the bat from the tutorial I learned that you can use x to delete text. .vimrc configuration file
 
  
