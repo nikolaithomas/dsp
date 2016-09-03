@@ -16,7 +16,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
+`ls`  lists the contents of the current directory
 `ls -a`  
 `ls -l`  
 `ls -lh`  
