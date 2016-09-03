@@ -70,4 +70,5 @@ What graphical editor will you use? How did you make your decision? What are som
 
 Vim- I made my decision because it's nice to have consistency across graphical and non-graphical environments and that way I don't have to learn two different editors. you never have to use the mouse. you can customize a bunch but right off the bat from the tutorial I learned that you can use x to delete text. .vimrc configuration file
 
+Although I did download Atom and am gonna give that a try too. I like how it is streamlined with Github
  
