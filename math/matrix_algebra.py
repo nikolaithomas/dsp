@@ -20,6 +20,7 @@ my_listu = [6,2,-3,5]
 my_listu = np.array(my_listu)
 my_listu*6
 #array([ 36,  12, -18,  30])
+
 2.4
 my_listu = [6,2,-3,5]
 my_listv = [3,5,-1,4]
@@ -27,6 +28,7 @@ my_listu = np.array(my_listu)
 my_listv = np.array(my_listv)
 np.dot(my_listu,my_listv)
 #51
+
 2.5
 my_listu = [6,2,-3,5]
 my_listu = np.array(my_listu)
