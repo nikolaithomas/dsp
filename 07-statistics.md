@@ -82,7 +82,7 @@ The result is 5/11 given the information that we know that he had a twin brother
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Both use a model for determining some outcome based on an input, but the Bayesian approach incorporates into that model any prior knowledge or history that they have relevant to the scenario at hand.
 
 ---
 
