@@ -9,16 +9,13 @@ def donuts(count):
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
 
-    >>> donuts(4)
-    'Number of donuts: 4'
-    >>> donuts(9)
-    'Number of donuts: 9'
-    >>> donuts(10)
-    'Number of donuts: many'
-    >>> donuts(99)
-    'Number of donuts: many'
-    """
-    raise NotImplementedError
+def donuts(count):
+    if count < 10:
+        return 'Number of donuts is: ' + str(count)
+    else:
+        return 'Number of donuts is: many'
+
+print donuts(12)
 
 
 def both_ends(s):
@@ -28,70 +25,45 @@ def both_ends(s):
     However, if the string length is less than 2, return instead the
     empty string.
 
-    >>> both_ends('spring')
-    'spng'
-    >>> both_ends('Hello')
-    'Helo'
-    >>> both_ends('a')
-    ''
-    >>> both_ends('xyz')
-    'xyyz'
-    """
-    raise NotImplementedError
+    def split(str):
+        if len(str) < 3:
+            return ''
+        else:
+            first = str[0:2]
+            second = str[-2:]
+            return first + second
+print split('spring')
 
 
-def fix_start(s):
-    """
-    Given a string s, return a string where all occurences of its
-    first char have been changed to '*', except do not change the
-    first char itself. e.g. 'babble' yields 'ba**le' Assume that the
-    string is length 1 or more.
 
-    >>> fix_start('babble')
-    'ba**le'
-    >>> fix_start('aardvark')
-    'a*rdv*rk'
-    >>> fix_start('google')
-    'goo*le'
-    >>> fix_start('donut')
-    'donut'
-    """
-    raise NotImplementedError
+def replace(str):
+    if len(str) < 1:
+            return ''
+    else:
+        first = str[0]
+        rest = str[1:]
+        return first + rest.replace(first, '*')
+print replace('babble')
+ 
 
 
-def mix_up(a, b):
-    """
-    Given strings a and b, return a single string with a and b
-    separated by a space '<a> <b>', except swap the first 2 chars of
-    each string. Assume a and b are length 2 or more.
-
-    >>> mix_up('mix', 'pod')
-    'pox mid'
-    >>> mix_up('dog', 'dinner')
-    'dig donner'
-    >>> mix_up('gnash', 'sport')
-    'spash gnort'
-    >>> mix_up('pezzy', 'firm')
-    'fizzy perm'
-    """
-    raise NotImplementedError
+  def mix_up(a, b):
+    if len(a or b) < 3:
+            return ''
+    else:
+        return b[0:2] + a[2:] + ' ' + a[0:2] + b[2:]
+print mix_up('pezzy', 'firm')
 
 
 def verbing(s):
-    """
-    Given a string, if its length is at least 3, add 'ing' to its end.
-    Unless it already ends in 'ing', in which case add 'ly' instead.
-    If the string length is less than 3, leave it unchanged. Return
-    the resulting string.
+    if len(s) < 3:
+        return s
+    if s[-3:] == 'ing':
+        return s + 'ly'
+    else:
+        return s + 'ing'
 
-    >>> verbing('hail')
-    'hailing'
-    >>> verbing('swiming')
-    'swimingly'
-    >>> verbing('do')
-    'do'
-    """
-    raise NotImplementedError
+print verbing('do')
 
 
 def not_bad(s):
