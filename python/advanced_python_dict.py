@@ -18,9 +18,21 @@ def new_list(list1, list2):
 my_list = df['name'].tolist()
 lastname = []
 new_list(my_list, lastname)
-
 df1 = DataFrame({'lastname': lastname})
 
 df2 = df.join(df1)
-
+del df2['name']
 df2
+#df2.set_index('lastname').T.to_dict('list')
+mydict = {}
+for x in range(len(df2)):
+    lastname = df2.iloc[x,3]
+    title = df2.iloc[x,1]
+    email = df2.iloc[x,2]
+    degree = df2.iloc[x,0]
+    mydict.setdefault(lastname, [])
+    mydict[lastname].append(degree)
+    mydict[lastname].append(title)
+    mydict[lastname].append(email)  
+mydict
+
