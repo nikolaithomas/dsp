@@ -18,6 +18,11 @@ def match_ends(list):
 match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
 
 
+    Given a list of strings, return a list with the strings in sorted
+    order, except group all the strings that begin with 'x' first.
+    e.g. ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] yields
+         ['xanadu', 'xyz', 'aardvark', 'apple', 'mix'].
+         
 def front_x(list):
     xlist = []
     otherlist = []
@@ -46,7 +51,7 @@ order_tuple([(1, 3), (3, 2), (2, 1)])
 
 
 def remove_adjacent(nums):
-    """
+'''
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
     returns [1, 2, 3]. You may create a new list or modify the passed
