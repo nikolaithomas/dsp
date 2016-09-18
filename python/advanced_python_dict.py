@@ -1,7 +1,8 @@
 import numpy as np
+import numpy as np
 import pandas as pd
 from pandas import Series,DataFrame
-import itertools
+
 
 url = 'https://raw.githubusercontent.com/nikolaithomas/dsp/master/python/faculty.csv'
 df = pd.read_csv(url, index_col=None)
@@ -36,3 +37,4 @@ for x in range(len(df2)):
     mydict[lastname].append(email)  
 mydict
 
+dict(mydict.items()[0:3])
