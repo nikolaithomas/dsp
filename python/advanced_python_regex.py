@@ -125,4 +125,17 @@ my_list
 
 
 #Q4. Find how many different email domains there are (Ex: mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.). Print the list of unique email domains.
+import numpy as np
+import pandas as pd
+from pandas import Series,DataFrame
 
+url = 'https://raw.githubusercontent.com/nikolaithomas/dsp/master/python/faculty.csv'
+df = pd.read_csv(url, index_col=None)
+df.columns = [x.strip().replace(' ', '_') for x in df.columns]
+
+my_list = df['email'].tolist()
+
+my_list2 = [i.split('@', 1)[1] for i in my_list]
+df1 = DataFrame({'my_list2': my_list2})
+print len(df1.my_list2.unique())
+print df1.my_list2.unique()
