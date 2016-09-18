@@ -8,14 +8,14 @@ def match_ends(words):
     where the string length is 2 or more and the first and last chars
     of the string are the same.
 
-    >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
-    3
-    >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
-    2
-    >>> match_ends(['aaa', 'be', 'abc', 'hello'])
-    1
-    """
-    raise NotImplementedError
+    
+def match_ends(list):
+    count = 0
+    for word in list:
+        if len(word) > 1 and word[0] == word[-1]:
+            count += 1
+    return count
+match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
 
 
 def front_x(words):
