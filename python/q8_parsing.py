@@ -10,7 +10,6 @@ from pandas import Series,DataFrame
 
 url = 'https://raw.githubusercontent.com/nikolaithomas/dsp/master/python/football.csv'
 df = pd.read_csv(url, index_col=None)
-#df.columns = [x.strip().replace(' ', '_') for x in df.columns]
 df['Goal Difference'] = abs(df['Goals'] - df['Goals Allowed'])
 dfanswer = df['Goal Difference'].min()
 df_row = df.loc[df['Goal Difference'] == dfanswer]
