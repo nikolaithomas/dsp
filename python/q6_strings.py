@@ -92,12 +92,24 @@ def front_back(a, b):
     'abcde', the front half is 'abc', the back half 'de'. Given 2
     strings, a and b, return a string of the form a-front + b-front +
     a-back + b-back
+def front_back(a, b):
+  alength = len(a)
+  blength = len(b)
 
-    >>> front_back('abcd', 'xy')
-    'abxcdy'
-    >>> front_back('abcde', 'xyz')
-    'abcxydez'
-    >>> front_back('Kitten', 'Donut')
-    'KitDontenut'
-    """
-    raise NotImplementedError
+  if alength % 2 == 0:
+    aindex = alength // 2
+  else:
+    aindex = (alength // 2) + 1
+
+  if blength % 2 == 0:
+    bindex = blength // 2
+  else:
+    bindex = (blength // 2) + 1
+
+  afront = a[0:aindex]
+  aback = a[aindex:]
+
+  bfront = b[0:bindex]
+  bback = b[bindex:]
+
+  return afront + bfront + aback + bback
