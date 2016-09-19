@@ -52,21 +52,13 @@ order_tuple([(1, 3), (3, 2), (2, 1)])
 
 def remove_adjacent(nums):
 '''
-    Given a list of numbers, return a list where all adjacent equal
-    elements have been reduced to a single element, so [1, 2, 2, 3]
-    returns [1, 2, 3]. You may create a new list or modify the passed
-    in list.
+def remove_adjacent(numbers):
+  result = []
+  for number in numbers:
+    if len(result) == 0 or number != result[-1]:
+      result.append(number)
+  return result
 
-    >>> remove_adjacent([1, 2, 2, 3])
-    [1, 2, 3]
-    >>> remove_adjacent([2, 2, 3, 3, 3])
-    [2, 3]
-    >>> remove_adjacent([3, 2, 3, 3, 3])
-    [3, 2, 3]
-    >>> remove_adjacent([])
-    []
-    """
-    raise NotImplementedError
 
 
 def linear_merge(list1, list2):
