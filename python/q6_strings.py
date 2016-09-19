@@ -74,16 +74,14 @@ def not_bad(s):
     So 'This dinner is not that bad!' yields: 'This dinner is
     good!'
 
-    >>> not_bad('This movie is not so bad')
-    'This movie is good'
-    >>> not_bad('This dinner is not that bad!')
-    'This dinner is good!'
-    >>> not_bad('This tea is not hot')
-    'This tea is not hot'
-    >>> not_bad("It's bad yet not")
-    "It's bad yet not"
-    """
-    raise NotImplementedError
+ def not_bad(s):
+  s_not = s.find('not')
+  s_bad = s.find('bad')
+
+  if s_bad > s_not:
+    s = s.replace(s[s_not:(s_bad+3)], 'good')
+
+  return s
 
 
 def front_back(a, b):
